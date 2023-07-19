@@ -9,6 +9,7 @@
     padding: 0;
 
 }
+/* nav styls */
 .nav-container{
     display: flex;
     justify-content: space-around;
@@ -19,6 +20,7 @@
 .nav-logo{
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 .nav-logo img{
     width: 86.041px;
@@ -67,6 +69,31 @@
     gap: 50px;
     background: #f3f1e6;
 }
+.header-btn-div{
+    margin-top: 20px;
+}
+.btn-header1{
+    display: inline-flex;
+    border: 0;
+    padding: 21px 30px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    color: #ffffff;
+    cursor: pointer;
+}
+.btn-header2{
+    border: 0;
+    display: inline-flex;
+    padding: 21px 30px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 48px;
+    background: #4EC5F7;
+    color: #ffffff;
+    cursor: pointer;
+}
 .play-goat{
     justify-content: left;
 }
@@ -101,6 +128,9 @@
 .section2-container-div1{
     margin-left: 100px;
 }
+.section-container-div2 img{
+    height: 600px;
+}
 .section2-container-div1 img{
     width: 500px;
 }
@@ -108,7 +138,46 @@
     text-align: right;
     margin-right: 100px;
 }
+.section2-container-div2 h2{
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+.section2-container-div2 p{
+    color: #534C64;
+    text-align: right;
+    font-family: Work Sans;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.section2-container-div2 button{
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    display: inline-flex;
+    padding: 21px 40px;
+    cursor: pointer;
+    gap: 10px;
+    border: 0;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.section2-container-div2 h4{
+    color: #534C64;
+}
 /* section3 styles */
+
+
 .section3-container{
     width: 100%;
     height: 500px;
@@ -116,25 +185,68 @@
 }
 .section3-container h3{
     justify-content: center;
+    color: #0B0223;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+.section3-container p{
+    color: #534C64;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; 
+    margin-bottom: 20px;
 }
 .online-game{
     display: flex;
     gap: 20px;
     justify-content: center;
 }
+.online-game-img{
+    width: 300px;
+}
 .online-game-img img{
     width: 250px;
 }
+
+
 /* section4-container styles */
+
+
 .section4-container{
     display: flex;
     height: 500px;
+    margin-top: 50px;
     align-items: center;
     justify-content: space-around;
 }
 .section4-container-div1{
     width: 300px;
     text-align: right;
+}
+.section4-container-div1 h2{
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.section4-container-div1 p{
+    color: #534C64;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
 }
 .section4-container-div2{
     justify-content: center;
@@ -235,4 +347,46 @@
 }
 .footer p{
     color: #ffffff;
+}
+
+
+/* small devaice */
+
+
+@media screen and (max-width:576px) {
+    .nav-container{
+        flex-direction: column;
+        margin-top: 0px;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+    .nav-logo{
+        margin-top: 0px;
+        gap: 20px;
+    }
+    .ul-li{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .nav-itme{
+        padding: 20px;
+    }
+    .section-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .section-container-div2{
+        justify-content: center;
+        align-items: center;
+    }
+    .section-container-div2 img{
+        height: 280px;
+    }
+    .section2-container{
+        flex-direction: column;
+    }
+    .online-game{
+        flex-direction: column;
+    }
 }
