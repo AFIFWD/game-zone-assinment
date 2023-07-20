@@ -443,6 +443,9 @@
     .section4-container-div1{
         align-items: center;
     }
+    .section4-container-div1 p{
+        text-align: center;
+    }
     .section4-container-div2{
         margin-left: 100px;
         align-items: center;
@@ -459,6 +462,14 @@
     .section5-container{
         margin-top: 200px;
         flex-direction: column-reverse;
+    }
+    .section5-container-div2 h2{
+        align-items: center;
+        text-align: center;
+    }
+    .section5-container-div2 p{
+        align-items: center;
+        text-align: center;
     }
     .s5cd2-img1{
         height: 300px;
