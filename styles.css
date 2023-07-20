@@ -300,27 +300,33 @@
     left: 400px;
 }
 
-
+/* section6 styles */
 
 
 .section6-container{
     text-align: center;
+    justify-content: center;
     margin-bottom: 20px;
+    display: flex;
+    width: 100wh;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.section6-container a{
+    text-decoration: none;
 }
 
-.btn-style{
-    margin-top: 30px;
-    text-align: center;
-    border: 0;
-    background: none;
-    padding: 10px;
-    width: 290px;
-    flex-direction: column;
+.btn-div{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    padding: 5px;
 }
-.btn-style:hover{
+.btn-div:hover{
     border: 1px solid rgb(221, 8, 8);
     border-radius: 50px;
     cursor: pointer;
+    color: #FF42A5;
 }
 
 /* footer styles */
@@ -353,7 +359,12 @@
     margin-bottom: 20px;
 }
 .social{
-    margin-bottom: 20px;
+    margin-bottom: 20px;;
+}
+.social a{
+    color: #FFF;
+    padding: 20px;
+    height: 50px;
 }
 .footer p{
     color: #ffffff;
@@ -404,9 +415,18 @@
         align-items: center;
         justify-content: center;
     }
+    .section2-container-div2{
+        justify-content: center;
+    }
     .section2-container-div1 img{
         width: 400px;
         margin-right: 100px;
+    }
+    .section2-container-div2 h2{
+        text-align: center;
+    }
+    .section2-container-div2 p{
+        text-align: center;
     }
     .online-game{
         flex-direction: column;
@@ -448,5 +468,54 @@
         position: relative;
         left: -40px;
         bottom: 80px;
+    }
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    .section-container{
+        flex-direction: column;
+        width: 100wh;
+    }
+    .section2-container{
+        flex-direction: column;
+        margin-top: 100px;
+        align-items: center;
+    }
+    .section2-container-div2{
+        text-align: center;
+    }
+    .section2-container-div2 h2{
+        text-align: center;
+    }
+    .section2-container-div2 p{
+        text-align: center;
+    }
+
+    /* sectiov 3 */
+
+    .section3-container{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .online-game{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* section 4 */
+
+    .section4-container{
+        margin-top: 400px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section5-container{
+        margin-top: 400px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section5-container-div1{
+        margin-left: -100px;
+    }
+    .section6-container{
+        margin-top: 300px;
     }
 }
